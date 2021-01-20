@@ -10,6 +10,9 @@
       <router-link  to="/userCenter">个人中心</router-link>
     </div>
       <div class="title">
+        <router-link  to="/tangchuan">弹窗测试</router-link>
+      </div>
+      <div class="title">
         <router-link  to="/vehiclelist">车辆列表</router-link>
       </div>
       <div class="title">

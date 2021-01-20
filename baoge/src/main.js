@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/router.js'
 import axios from 'axios'
-
 Vue.prototype.$axios = axios
 
 axios.defaults.baseURL = '/apis';//后端开发环境地址

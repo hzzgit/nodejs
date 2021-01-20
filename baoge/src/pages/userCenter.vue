@@ -21,6 +21,9 @@ export default {
     this.id = this.$route.query.couponId;
     this.name = this.$route.query.name;
 
+  },
+  methods: {
+
   }
 }
 </script>

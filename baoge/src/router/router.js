@@ -5,7 +5,7 @@ import Index from '../pages/index'
 import UserCenter from '../pages/userCenter'
 import UserInfo from '../pages/UserInfo'
 import Vehiclelist from '../pages/vehiclelist'
-
+import tangchuan from '../pages/tangchuan'
 Vue.use(Router)
 
 export default new Router({
@@ -24,6 +24,11 @@ export default new Router({
       path: '/vehiclelist',
       name: 'vehiclelist',
       component: Vehiclelist
+    },
+    {
+      path: '/tangchuan',
+      name: 'tangchuan',
+      component: tangchuan
     },
     {
       path: '/userCenter',

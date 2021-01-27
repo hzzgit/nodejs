@@ -6,6 +6,7 @@ import UserCenter from '../pages/userCenter'
 import UserInfo from '../pages/UserInfo'
 import Vehiclelist from '../pages/vehiclelist'
 import tangchuan from '../pages/tangchuan'
+import layuilist from '../pages/layuilist'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +30,11 @@ export default new Router({
       path: '/tangchuan',
       name: 'tangchuan',
       component: tangchuan
+    },
+    {
+      path: '/layuilist',
+      name: 'layuilist',
+      component: layuilist
     },
     {
       path: '/userCenter',

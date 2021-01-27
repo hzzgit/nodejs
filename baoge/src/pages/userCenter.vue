@@ -1,13 +1,16 @@
 <template>
   <div>
     <p>这是个人中心</p>
+    <flowdemo></flowdemo>
     <p>{{name}}</p>
     <router-link to="/userCenter/userInfo">用户信息{{id}}</router-link>
     <router-view></router-view>
   </div>
+
 </template>
 
 <script>
+  import flowdemo from '../components/layui/flowdemo'
 export default {
   data () {
     return{
@@ -15,6 +18,9 @@ export default {
       name:''
     }
 
+  },
+  components: {
+    flowdemo,
   },
   created(){
 

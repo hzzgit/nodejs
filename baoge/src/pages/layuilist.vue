@@ -15,6 +15,7 @@
         <a class="static.layui-btn static.layui-btn-xs" lay-event="view">详情</a>
         <a class="static.layui-btn static.layui-btn-danger static.layui-btn-xs" lay-event="del">删除</a>
     </script>
+    <button v-on:click="tiaozhuan">跳转</button>
 </div>
 </template>
 
@@ -74,6 +75,26 @@
         });
       });
 
+      function  editUser(id) {
+        layer.open({
+          type : 1,
+          title : "车辆编辑",
+          area : [ '450px', '300px' ],
+          content : '/vehiclelist',
+          btn: ['确定', '取消'],
+          yes: function(index){
+            alert("这是点击确定按钮走的回调")
+          },
+          btn2: function(){
+            alert("这是点击取消按钮走的回调")
+          },
+          end:function(){
+            alert('这是点击任一按钮都会走的回调')
+          }
+
+        });
+      }
+
      function deleteUser(veid){
        console.log("读取vue参数"+name)
        $.ajax({
@@ -102,7 +123,10 @@
       },
        view(userId) {
          document.location = '/index/index';
-    }
+    },
+      tiaozhuan(){
+        this.$router.push({ path: '/vehiclelist', query: { docId:'我是谁'}});
+      }
   }
   }
 </script>

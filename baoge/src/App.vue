@@ -21,7 +21,9 @@
       <div class="title">
         <router-link  to="/elementilist">车辆列表elementui</router-link>
       </div>
-
+      <div class="title">
+        <router-link  to="/echartstest">echarts测试</router-link>
+      </div>
       <div class="title">
         <router-link  :to="{name:'userCenter',query:{couponId: record.id,name:'车'}}">个人中心1</router-link>
       </div>

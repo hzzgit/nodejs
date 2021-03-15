@@ -8,6 +8,8 @@ import Vehiclelist from '../pages/vehiclelist'
 import tangchuan from '../pages/tangchuan'
 import layuilist from '../pages/layuilist'
 import elementilist from '../pages/elementilist'
+import echartstest from '../pages/echartstest'
+import echartstestreplace from '../pages/echartstestreplace'
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +43,16 @@ export default new Router({
       path: '/elementilist',
       name: 'elementilist',
       component: elementilist
+    },
+    {
+      path: '/echartstest',
+      name: 'echartstest',
+      component: echartstest
+    },
+    {
+      path: '/echartstestreplace',
+      name: 'echartstestreplace',
+      component: echartstestreplace
     },
     {
       path: '/userCenter',
